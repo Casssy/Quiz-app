@@ -1,0 +1,162 @@
+/********* GENERAL **************/
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: #F5F7FB;
+    text-align: center;
+    font-family: Inter, sans-serif;
+    color: #293264;
+}
+
+h1, h3{
+    font-family: Karla, sans-serif;
+}
+
+h1{
+    margin: 100px auto 7px;  
+}
+
+p{
+    font-weight: 500;
+}
+
+/********* HOMEPAGE STYLING *************/
+.home{
+    margin-top: 200px;
+}
+
+/********* BLOBS STYLING *************/
+
+.yellow-blob, .blue-blob, .purple-blob{
+    
+    border-radius: 45% 55% 70% 30% / 28% 30% 70% 72%;
+    position: absolute;
+    z-index: -1;
+}
+
+.yellow-blob{
+    width: 450px;
+    height: 270px;
+    background-color: #FFFAD1;
+    left: 65%;
+    bottom: 60%;
+    transform: rotate(-15deg);  
+}
+
+.blue-blob{
+    width: 500px;
+    height: 300px;
+    background-color: #DEEBF8;
+    right: 80%;
+    top: 40%;
+    transform: rotate(100deg); 
+}
+
+.purple-blob{
+    width: 350px;
+    height: 250px;
+    background-color: #f2e4fd;
+    left: 50%;
+    top: 65%;
+    transform: rotate(180deg); 
+}
+
+
+/******** BUTTONS STYLING **********/
+
+button{
+    background-color: #4D5B9E;
+    color: #F5F7FB;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.start-btn{  
+    width: 200px;
+    height: 50px;
+    margin-top: 1.5rem;
+}
+
+.check-btn{
+    width: 150px;
+    height: 45px;
+    font-size: 0.75rem; 
+    line-height: 12px;
+    font-weight: 600;  
+}
+
+.answer:focus, .check-btn:focus, .start-btn:focus{
+     outline: none;
+ }
+
+ .start-btn:active, .check-btn:active{
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+ }
+
+/******* GAME PAGE ********/
+
+.question{
+    width: 75%;
+    margin: auto;
+    line-height: 1.12rem;
+    text-align: left;
+    border-bottom: 1px solid #DBDEF0;
+    padding-top: 2%; 
+    padding-bottom: 20px;
+}
+
+/****** ANSWERS STYLING *********/
+ 
+ .answer{
+     border: solid #293264 1px;
+     border-radius: 15px;
+     padding: 5px 20px;
+     font-size: 11px;
+     font-weight: 500;
+     background-color: transparent;
+     color: #293264;
+     margin-right: 10px; 
+     margin-bottom: 10 px; 
+ }
+ 
+.selected {
+    background-color: #D6DBF5;
+    border: none;
+}
+
+#correct.answer{
+    background-color: #94D7A2;
+    border: none;
+}
+
+#incorrect.answer.selected{
+    background-color: #F8BCBC;
+    border: none;
+    opacity: 50%;
+}
+
+#not-selected.answer{
+    opacity: 50%;
+}
+
+/******** SCORE STYLING *******/
+
+.score{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.score-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2rem;
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
